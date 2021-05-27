@@ -1,3 +1,7 @@
+input#extension_TerritoryName {
+  display: none;
+}
+
 .self_asserted_container .row .panel-default {
   padding: 40px 30px;
   margin: auto;

@@ -1,7 +1,7 @@
 @endpoint = https://xstof-verifyinator.azurewebsites.net/Territory
 @b2cappid = 33e74a7778ca49528593885a5cc084e0
 
-
+# Notes: no dashes in the b2c app id
 # THE BELOW SHOULD BE A VALID REQUEST
 POST {{endpoint}} HTTP/1.1
 content-type: application/json

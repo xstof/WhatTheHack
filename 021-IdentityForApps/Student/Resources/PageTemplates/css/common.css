@@ -1,3 +1,8 @@
+/* THIS IS TO HIDE THE TERRITORY ATTRIBUTE */
+input#extension_TerritoryName {
+  display: none;
+}
+
 html {
   background: none;
 }
