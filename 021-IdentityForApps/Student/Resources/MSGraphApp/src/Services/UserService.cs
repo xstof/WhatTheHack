@@ -42,8 +42,8 @@ namespace b2c_ms_graph
 
             // Declare the names of the custom attributes
             // TODO -- change the attribute names!!
-            const string customAttributeName1 = "<cmc-id-attribute-name>";
-            const string customAttributeName2 = "<territory-name-attribute-name>";
+            const string customAttributeName1 = "ConsultantID";
+            const string customAttributeName2 = "TerritoryName";
 
             // Get the complete name of the custom attribute (Azure AD extension)
             Helpers.B2cCustomAttributeHelper helper = new Helpers.B2cCustomAttributeHelper(b2cExtensionAppClientId);

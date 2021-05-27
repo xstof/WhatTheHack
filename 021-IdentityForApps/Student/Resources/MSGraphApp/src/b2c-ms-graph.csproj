@@ -1,11 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>b2c_ms_graph</RootNamespace>
+    <UserSecretsId>a1b87d9c-b3d6-4b37-9755-7a46f2b1bfab</UserSecretsId>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.2" />
@@ -15,7 +15,6 @@
     <PackageReference Include="Microsoft.Graph.Beta" Version="0.12.0-preview" />
     <PackageReference Include="Microsoft.Identity.Client" Version="4.9.0" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="..\data\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -26,5 +25,4 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
