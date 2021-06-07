@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TrustFrameworkPolicy
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06"
   PolicySchemaVersion="0.3.0.0"
-  TenantId="xstofcontoso.onmicrosoft.com"
+  TenantId="yourtenant.onmicrosoft.com"
   PolicyId="B2C_1A_TrustFrameworkBase"
-  PublicPolicyUri="http://xstofcontoso.onmicrosoft.com/B2C_1A_TrustFrameworkBase">
+  PublicPolicyUri="http://yourtenant.onmicrosoft.com/B2C_1A_TrustFrameworkBase">
 
   <BuildingBlocks>
     <ClaimsSchema>
@@ -550,14 +550,6 @@
         <TechnicalProfile Id="AAD-Common">
           <DisplayName>Azure Active Directory</DisplayName>
           <Protocol Name="Proprietary" Handler="Web.TPEngine.Providers.AzureActiveDirectoryProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-
-            <!-- XSTOF ADDED THIS METADATA - COULD THIS FIX THE ISSUE? -->
-            <!-- <Metadata> -->
-              <!-- This is the "Object ID" from the "b2c-extensions-app" -->
-              <!-- <Item Key="ApplicationObjectId">34eb3fa6-0bce-40c5-8706-8308ea0ade42</Item> -->
-              <!-- This is the "Application ID" from the "b2c-extensions-app" -->
-              <!-- <Item Key="ClientId">34eb3fa6-0bce-40c5-8706-8308ea0ade42</Item> -->
-            <!-- </Metadata> -->
 
           <CryptographicKeys>
             <Key Id="issuer_secret" StorageReferenceId="B2C_1A_TokenSigningKeyContainer" />
