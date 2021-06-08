@@ -260,14 +260,22 @@
           </ClaimsExchanges>
         </OrchestrationStep>
 
-        <!-- Sample: This step present the account has been deleted message -->
+        <!-- CUSTOMIZED -->
+        <!-- Record an event in App Insights to indicate an account has been deleted -->
         <OrchestrationStep Order="7" Type="ClaimsExchange">
+          <ClaimsExchanges>
+            <ClaimsExchange Id="TrackUserDeleted" TechnicalProfileReferenceId="AppInsights-UserDeleted" />
+          </ClaimsExchanges>
+        </OrchestrationStep>
+
+        <!-- Sample: This step present the account has been deleted message -->
+        <OrchestrationStep Order="8" Type="ClaimsExchange">
           <ClaimsExchanges>
             <ClaimsExchange Id="SelfAsserted-AccountHasBeenDeleted" TechnicalProfileReferenceId="SelfAsserted-AccountHasBeenDeleted"/>
           </ClaimsExchanges>
         </OrchestrationStep>
  
-        <OrchestrationStep Order="8" Type="SendClaims" CpimIssuerTechnicalProfileReferenceId="JwtIssuer"/>
+        <OrchestrationStep Order="9" Type="SendClaims" CpimIssuerTechnicalProfileReferenceId="JwtIssuer"/>
  
       </OrchestrationSteps>
       <ClientDefinition ReferenceId="DefaultWeb"/>
